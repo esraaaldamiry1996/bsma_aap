@@ -43,6 +43,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          
           children: [
             TweenAnimationBuilder(
               tween: Tween<double>(begin: 0.0, end: 1.0),
@@ -99,7 +100,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     borderRadius: BorderRadius.circular(30),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
+                        color: Color(0xFFCFE9F7).withValues(alpha: 0.5),
                         blurRadius: 10,
                         offset: const Offset(0, 5),
                       ),
