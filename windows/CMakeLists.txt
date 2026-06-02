@@ -1,10 +1,18 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
+<<<<<<< HEAD
 project(basmaa_app LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "basmaa_app")
+=======
+project(kids_learning_app LANGUAGES CXX)
+
+# The name of the executable created for the application. Change this to change
+# the on-disk name of your application.
+set(BINARY_NAME "kids_learning_app")
+>>>>>>> c30c6139a9c46cf78732e62e50214f4799b85db5
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

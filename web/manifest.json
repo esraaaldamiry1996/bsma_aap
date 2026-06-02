@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "basmaa_app",
     "short_name": "basmaa_app",
+=======
+    "name": "kids_learning_app",
+    "short_name": "kids_learning_app",
+>>>>>>> c30c6139a9c46cf78732e62e50214f4799b85db5
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

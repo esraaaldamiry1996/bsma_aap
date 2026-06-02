@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'security_screen.dart';
+
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
 
@@ -7,7 +9,6 @@ class WelcomeScreen extends StatefulWidget {
 }
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
-  
   bool _isButtonVisible = false;
 
   @override
@@ -43,7 +44,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          
+
           children: [
             TweenAnimationBuilder(
               tween: Tween<double>(begin: 0.0, end: 1.0),
@@ -83,7 +84,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               opacity: _isButtonVisible ? 1.0 : 0.0,
               duration: const Duration(seconds: 1),
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          const Security(), 
+                    ),
+                  );
+                },
                 child: Container(
                   width: 250,
                   height: 75,
@@ -100,7 +109,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     borderRadius: BorderRadius.circular(30),
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0xFFCFE9F7).withValues(alpha: 0.5),
+                        color: const Color(0xFFCFE9F7).withValues(alpha: 0.5),
                         blurRadius: 10,
                         offset: const Offset(0, 5),
                       ),

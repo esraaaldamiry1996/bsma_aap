@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'welcome_screen.dart';
-import 'login_screen.dart';
+
+
+
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]).then((_) {
-    runApp(const MyApp());
-  });
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,12 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'تطبيق بصمة',
-      debugShowCheckedModeBanner: false,
+      title: 'تطبيق بصمه',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
+        
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      home: const WelcomeScreen(),
+      home: const  WelcomeScreen  (),
     );
   }
 }

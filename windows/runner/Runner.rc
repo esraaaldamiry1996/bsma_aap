@@ -90,12 +90,21 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
+<<<<<<< HEAD
             VALUE "FileDescription", "basmaa_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "basmaa_app" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "basmaa_app.exe" "\0"
             VALUE "ProductName", "basmaa_app" "\0"
+=======
+            VALUE "FileDescription", "kids_learning_app" "\0"
+            VALUE "FileVersion", VERSION_AS_STRING "\0"
+            VALUE "InternalName", "kids_learning_app" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "kids_learning_app.exe" "\0"
+            VALUE "ProductName", "kids_learning_app" "\0"
+>>>>>>> c30c6139a9c46cf78732e62e50214f4799b85db5
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

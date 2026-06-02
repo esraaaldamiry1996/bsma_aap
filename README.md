@@ -1,4 +1,4 @@
-# basmaa_app
+# kids_learning_app
 
 A new Flutter project.
 
