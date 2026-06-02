@@ -15,11 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "33CC10EC2044A3C60003C045"
-<<<<<<< HEAD
-               BuildableName = "basmaa_app.app"
-=======
                BuildableName = "kids_learning_app.app"
->>>>>>> c30c6139a9c46cf78732e62e50214f4799b85db5
                BlueprintName = "Runner"
                ReferencedContainer = "container:Runner.xcodeproj">
             </BuildableReference>
@@ -35,11 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33CC10EC2044A3C60003C045"
-<<<<<<< HEAD
-            BuildableName = "basmaa_app.app"
-=======
             BuildableName = "kids_learning_app.app"
->>>>>>> c30c6139a9c46cf78732e62e50214f4799b85db5
             BlueprintName = "Runner"
             ReferencedContainer = "container:Runner.xcodeproj">
          </BuildableReference>
@@ -67,21 +59,13 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-<<<<<<< HEAD
-      enableGPUValidationMode = "1"
-=======
->>>>>>> c30c6139a9c46cf78732e62e50214f4799b85db5
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33CC10EC2044A3C60003C045"
-<<<<<<< HEAD
-            BuildableName = "basmaa_app.app"
-=======
             BuildableName = "kids_learning_app.app"
->>>>>>> c30c6139a9c46cf78732e62e50214f4799b85db5
             BlueprintName = "Runner"
             ReferencedContainer = "container:Runner.xcodeproj">
          </BuildableReference>
@@ -98,11 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33CC10EC2044A3C60003C045"
-<<<<<<< HEAD
-            BuildableName = "basmaa_app.app"
-=======
             BuildableName = "kids_learning_app.app"
->>>>>>> c30c6139a9c46cf78732e62e50214f4799b85db5
             BlueprintName = "Runner"
             ReferencedContainer = "container:Runner.xcodeproj">
          </BuildableReference>
