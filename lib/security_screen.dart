@@ -10,14 +10,14 @@ class Security extends StatefulWidget {
 class SecurityState extends State<Security> {
   @override
   Widget build(BuildContext context) {
-    const backgroundGradient =  LinearGradient(
+    const backgroundGradient = LinearGradient(
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
       colors: [
-        Color(0xFFE9FCFC),
-        Color(0xFFCAFBEA),
-        Color(0xFFD6FADE),
-        Color(0xFFFFFAED),
+        Color.fromARGB(255, 192, 226, 246),
+        Color.fromARGB(255, 208, 246, 227),
+        Color.fromARGB(255, 201, 241, 199),
+        Color.fromARGB(255, 245, 238, 201),
       ],
       stops: [0.0, 0.18, 0.65, 1.0],
     );
@@ -26,176 +26,119 @@ class SecurityState extends State<Security> {
       body: Container(
         decoration: const BoxDecoration(gradient: backgroundGradient),
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-              
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Image.asset(
-                    'assets/images/app_logo.jpg', 
-                    height: 60,
-                    fit: BoxFit.contain,
-                    errorBuilder: (context, error, stackTrace) =>
-                        const SizedBox(height: 60),
-                  ),
+          
+          child: Center(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(24.0),
+              child: Card(
+                elevation: 12,
+                shadowColor: Colors.black26,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(32.0),
                 ),
-                const SizedBox(height: 24),
-
-                Expanded(
-                  child: Card(
-                    elevation: 12,
-                    shadowColor: Colors.black26,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(32.0),
-                    ),
-                    color: Colors.white,
-                    child: Padding(
-                      padding: const EdgeInsets.all(24.0),
-                      child: Column(
-                      
-                        children: [
-                    
-                          Expanded(
-                            child: SingleChildScrollView(
-                              child: Column(
-                                children: [
-                                  const SizedBox(height: 16),
-                                  Image.asset(
-                                    'assets/images/shield_icon.jpg', 
-                                    height: 100,
-                                    fit: BoxFit.contain,
-                                    errorBuilder:
-                                        (context, error, stackTrace) =>
-                                            const SizedBox(height: 100),
-                                  ),
-                                  const SizedBox(height: 32),
-                                  const Text(
-                                    'إعدادات الوالدين',
-                                    style: TextStyle(
-                                      fontSize: 28,
-                                      fontWeight: FontWeight.bold,
-                                      color: Color(
-                                        0xFF1A237E,
-                                      ), 
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                  const SizedBox(height: 16),
-                                  const Text(
-                                    'هذه الصفحة مخصصة للبالغين فقط. للمتابعة، اضغط مطولاً على الزر أدناه.',
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Color(0xFF666666),
-                                      height: 1.5,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                  const SizedBox(height: 48),
-
-                                  GestureDetector(
-                                    onLongPress: () {
-                                    
-                                    },
-                                    child: Container(
-                                      width: double.infinity,
-                                      decoration: BoxDecoration(
-                                        gradient: const LinearGradient(
-                                          begin: Alignment.centerLeft,
-                                          end: Alignment.centerRight,
-                                          colors: [
-                                            Color(0xFFA5D6A7), // أزرق فاتح
-                                            Color(0xFF26A69A), // أخضر مائي
-                                          ],
-                                        ),
-                                        borderRadius: BorderRadius.circular(16),
-                                      ),
-                                      padding: const EdgeInsets.symmetric(
-                                        vertical: 16,
-                                      ),
-                                      alignment: Alignment.center,
-                                      child: const Text(
-                                        'اضغط مطولاً للمتابعة',
-                                        style: TextStyle(
-                                          fontSize: 18,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 16),
-                                  const Text(
-                                    'إضغط لمدة ثانيتين',
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      color: Color(0xFF999999),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-
-                        
-                          Align(
-                            alignment: Alignment
-                                .bottomLeft, 
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.pop(
-                                  context,
-                                );
-                              },
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 20,
-                                  vertical: 8,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: const Color.fromARGB(
-                                    255,
-                                    38,
-                                    166,
-                                    154,
-                                  ),
-                                  borderRadius: BorderRadius.circular(
-                                    10,
-                                  ), 
-                                  border: Border.all(
-                                    color: const Color.fromARGB(
-                                      255,
-                                      38,
-                                      166,
-                                      154,
-                                    ), 
-                                    width: 2.0, 
-                                  ),
-                                ),
-                                child: const Text(
-                                  'رجوع',
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(
-                                      255,
-                                      240,
-                                      232,
-                                      232,
-                                    ), 
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min, 
+                    children: [
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Image.asset(
+                          'assets/images/app_long.jpg',
+                          height: 70,
+                          fit: BoxFit.contain,
+                          errorBuilder: (context, error, stackTrace) {
+                            return const Icon(Icons.error, color: Colors.red, size: 60);
+                          },
+                        ),
                       ),
-                    ),
+                      const SizedBox(height: 16),
+                      Image.asset(
+                        'assets/images/shiled_icon.jpg', 
+                        height: 100,
+                        fit: BoxFit.contain,
+                        errorBuilder: (context, error, stackTrace) =>
+                            const SizedBox(height: 100),
+                      ),
+                      const SizedBox(height: 32),
+                      const Text(
+                        'إعدادات الوالدين',
+                        style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF1A237E),
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 16),
+                      const Text(
+                        'هذه الصفحة مخصصة للبالغين فقط. للمتابعة، اضغط مطولاً على الزر أدناه.',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Color(0xFF666666),
+                          height: 1.5,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 48),
+                      GestureDetector(
+                        onLongPress: () {
+                        
+                        },
+                        child: Container(
+                          width: 250,
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [
+                              Color(0xFF70A5A5),
+                              Color(0xFF7CB174)
+                              ],
+                            ),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          alignment: Alignment.center,
+                          child: const Text(
+                            'اضغط مطولاً للمتابعة',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      const Text(
+                        'إضغط لمدة ثانيتين',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF999999),
+                        ),
+                      ),
+                      const SizedBox(height: 24),
+                    Align(
+                        alignment: Alignment.centerLeft, 
+                      
+                        child: IconButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          icon: const Icon(
+                        Icons.keyboard_double_arrow_left_rounded,
+                            color: Color(0xFF26A69A), 
+                            
+                            size: 38, 
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ],
+              ),
             ),
           ),
         ),
