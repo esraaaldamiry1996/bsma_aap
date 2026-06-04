@@ -95,6 +95,7 @@ class SecurityState extends State<Security> {
                               colors: [
                               Color(0xFF70A5A5),
                               Color(0xFF7CB174)
+                              
                               ],
                             ),
                             borderRadius: BorderRadius.circular(16),
